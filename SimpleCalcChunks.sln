@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalcChunks", "SimpleCalcChunks\SimpleCalcChunks.csproj", "{273CFCFB-3B4B-45EF-9E5D-E95FAA84D23D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcTestN", "CalcTestN\CalcTestN.csproj", "{4E8654BE-F3AF-45BD-A9F5-CC799C156097}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{273CFCFB-3B4B-45EF-9E5D-E95FAA84D23D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{273CFCFB-3B4B-45EF-9E5D-E95FAA84D23D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{273CFCFB-3B4B-45EF-9E5D-E95FAA84D23D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{273CFCFB-3B4B-45EF-9E5D-E95FAA84D23D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E8654BE-F3AF-45BD-A9F5-CC799C156097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E8654BE-F3AF-45BD-A9F5-CC799C156097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E8654BE-F3AF-45BD-A9F5-CC799C156097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E8654BE-F3AF-45BD-A9F5-CC799C156097}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

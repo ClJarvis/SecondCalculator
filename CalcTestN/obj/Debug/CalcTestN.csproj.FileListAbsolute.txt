@@ -1,0 +1,8 @@
+C:\Users\chris\Documents\GitHub\SimpleCalcChunks\CalcTestN\obj\Debug\CalcTestN.csprojResolveAssemblyReference.cache
+C:\Users\chris\Documents\GitHub\SimpleCalcChunks\CalcTestN\bin\Debug\CalcTestN.dll
+C:\Users\chris\Documents\GitHub\SimpleCalcChunks\CalcTestN\bin\Debug\CalcTestN.pdb
+C:\Users\chris\Documents\GitHub\SimpleCalcChunks\CalcTestN\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\chris\Documents\GitHub\SimpleCalcChunks\CalcTestN\bin\Debug\SimpleCalcChunks.exe
+C:\Users\chris\Documents\GitHub\SimpleCalcChunks\CalcTestN\bin\Debug\SimpleCalcChunks.pdb
+C:\Users\chris\Documents\GitHub\SimpleCalcChunks\CalcTestN\obj\Debug\CalcTestN.dll
+C:\Users\chris\Documents\GitHub\SimpleCalcChunks\CalcTestN\obj\Debug\CalcTestN.pdb
