@@ -16,6 +16,51 @@ namespace CalcTestN
         }
 
         [TestMethod]
+        public void DoesEquationHaveaddintionSign()
+        {
+            var calc = new Parse();
+            var op = calc.GetOperator("20+5");
+            var expected = '+'; ;
+            Assert.AreEqual(expected, calc.GetOperator("+"));
+        }
+
+        [TestMethod]
+        public void DoesEquationHaveSubtractionSign()
+        {
+            var calc = new Parse();
+            var op = calc.GetOperator("20-5");
+            var expected = '-'; ;
+            Assert.AreEqual(expected, calc.GetOperator("-"));
+        }
+
+        [TestMethod]
+        public void DoesEquationHaveMultiplicationSign()
+        {
+            var calc = new Parse();
+            var op = calc.GetOperator("20*5");
+            var expected = '*'; ;
+            Assert.AreEqual(expected, calc.GetOperator("*"));
+        }
+
+        [TestMethod]
+        public void DoesEquationHaveModulusSign()
+        {
+            var calc = new Parse();
+            var op = calc.GetOperator("20%5");
+            var expected = '%'; ;
+            Assert.AreEqual(expected, calc.GetOperator("%"));
+        }
+
+        [TestMethod]
+        public void DoesEquationHaveDivisionSign()
+        {
+            var calc = new Parse();
+            var op = calc.GetOperator("20/5");
+            var expected = '/'; ;
+            Assert.AreEqual(expected, calc.GetOperator("/"));
+        }
+
+        [TestMethod]
         public void DoesEquationHaveNumbers()
         {
             var calc = new Parse();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimpleCalcChunks
 {
-    public class Parse
+    public class Parse  ///static??
     {
         
         private Char[] delimiterChars = { '+', '-', '*', '/', '%' };

@@ -3,3 +3,4 @@ C:\Users\chris\Documents\GitHub\SimpleCalcChunks\SimpleCalcChunks\bin\Debug\Simp
 C:\Users\chris\Documents\GitHub\SimpleCalcChunks\SimpleCalcChunks\bin\Debug\SimpleCalcChunks.pdb
 C:\Users\chris\Documents\GitHub\SimpleCalcChunks\SimpleCalcChunks\obj\Debug\SimpleCalcChunks.exe
 C:\Users\chris\Documents\GitHub\SimpleCalcChunks\SimpleCalcChunks\obj\Debug\SimpleCalcChunks.pdb
+C:\Users\chris\Documents\GitHub\SimpleCalcChunks\SimpleCalcChunks\obj\Debug\SimpleCalcChunks.csprojResolveAssemblyReference.cache
