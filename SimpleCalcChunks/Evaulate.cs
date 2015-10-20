@@ -13,10 +13,18 @@ namespace SimpleCalcChunks
         {
             if (input == "lastq")
             {
+                if( Stack.lastQuestion ==  null)
+                {
+                    return "No Operation entered";
+                }
                 return Stack.lastQuestion;
             }
             else if (input == "last")
             {
+                if (Stack.lastQuestion == null)
+                {
+                    return "No Operation entered";
+                }
                 return Stack.last;
             }
             else
@@ -47,6 +55,8 @@ namespace SimpleCalcChunks
                     default:
                         throw new ArgumentException("incorrect format");
                 }
+                Stack.last = result.ToString();
+                Stack.lastQuestion = input;
                 return result.ToString();
             }
         }

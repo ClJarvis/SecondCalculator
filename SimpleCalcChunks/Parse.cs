@@ -29,39 +29,12 @@ namespace SimpleCalcChunks
 
             }
            
-            throw new ArgumentException("Invalid A");
-            try
-            {
-                throw new ArgumentException("Invalid B Input you did not include a mathmatic symbol");
-            }
-            catch
-            {
-                throw new ArgumentException("Invalid  C Input you did not include a mathmatic symbol");
-            }
+            throw new ArgumentException("Invalid Input");
         }
 
-       /*   public int Evaluate(string input)
-          {
-              var operans = GetNumbers(input);
-              var op = GetOperator(input);
-
-              switch (op)
-              {
-                  case '+':
-                      return Addition.AddNum(operans);
-                  case '-':
-                      return Subtraction.SubNum(operans);
-                  case '*':
-                      return Multiplication.MultiplyNum(operans);
-                  case '/':
-                      return Division.DivideNum(operans);
-                  case '%':
-                      return Modulus.ModNum(operans);
-                  default:
-                      throw new ArgumentException("incorrect format");
-              }     
-              */
-
+        // tests for lastq bad input 
+        //no input 
+        //invaild then lastq
           }
           
 

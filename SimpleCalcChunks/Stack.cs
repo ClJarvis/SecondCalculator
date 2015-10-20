@@ -10,5 +10,6 @@ namespace SimpleCalcChunks
     {
         public static string lastQuestion { get; set; }
         public static string last { get; set; }
+        public static string exit { get; set; }
     }
 }

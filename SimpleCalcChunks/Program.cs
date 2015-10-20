@@ -11,12 +11,28 @@ namespace SimpleCalcChunks
     {
         static void Main(string[] args)
         {
-            string input = Console.ReadLine();
-            Evaulate calculator = new Evaulate();
-            var result = calculator.Evaluate(input);
-            Console.WriteLine("   = " + result);
+            int x = 0;
+            while (true )
+            {
+                
+                Console.WriteLine("[" + x + "]>");
+                string input = Console.ReadLine();
+                Evaulate calculator = new Evaulate();
+            
+                try
+                {
+                    var result = calculator.Evaluate(input);
+                    Console.WriteLine("   = " + result);
+                   
+                }
+                catch (Exception e) 
+                {
+                    Console.WriteLine(e.Message);  
+                    
+                }
 
-            Console.ReadLine();
+                x++;
+            }
         }
     }
 }

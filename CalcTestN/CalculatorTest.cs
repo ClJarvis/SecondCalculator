@@ -134,9 +134,7 @@ namespace CalcTestN
         {
             string input1 = "1";
             string input2 = "2";
-            Addition operation_class = new Addition();
-            
-           
+            Addition operation_class = new Addition();        
         }*/
 
         [TestMethod] 
