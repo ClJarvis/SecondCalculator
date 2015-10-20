@@ -14,7 +14,7 @@ namespace SimpleCalcChunks
             var rightNumber = Convert.ToInt32(input[1]);
             return leftNumber + rightNumber;
 
-           /*   if (!leftNumber = Convert.ToInt32(input[0]))
+         /*     if (!leftNumber = Convert.ToInt32(input[0]))
                 {
                     ArgumentException argEx = new ArgumentException();
                     throw argEx;
@@ -24,11 +24,12 @@ namespace SimpleCalcChunks
                 {
                     ArgumentException argEx = new ArgumentException();
                     throw argEx;
-                } */
+                } 
+                */
                 
         }
 
-        public int AddNum(int leftNumber, int rightNumber)
+        public int AddN(int leftNumber, int rightNumber)
         {
             return leftNumber + rightNumber;
         }

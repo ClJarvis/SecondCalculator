@@ -12,7 +12,7 @@ namespace SimpleCalcChunks
         static void Main(string[] args)
         {
             int x = 0;
-            while (true )
+            while (true)
             {
                 
                 Console.WriteLine("[" + x + "]>");

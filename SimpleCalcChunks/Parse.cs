@@ -32,9 +32,7 @@ namespace SimpleCalcChunks
             throw new ArgumentException("Invalid Input");
         }
 
-        // tests for lastq bad input 
-        //no input 
-        //invaild then lastq
+        
           }
           
 

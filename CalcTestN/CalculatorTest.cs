@@ -128,14 +128,16 @@ namespace CalcTestN
             Assert.AreEqual(answer, -25);
         }
 
-      /*  [TestMethod]
-        [ExpectedException(typeof(System.DivideByZeroException))]
-        public void AddTwoStringBadInput()
-        {
-            string input1 = "1";
-            string input2 = "2";
-            Addition operation_class = new Addition();        
-        }*/
+         [TestMethod]
+          [ExpectedException(typeof(System.DivideByZeroException))]
+          public void AddTwoStringBadInput()
+          {
+              string input1 = "1";
+              string input2 = "2";
+              Addition operation_class = new Addition();
+             // operation_class.AddNum(input1, input2);
+        }
+     
 
         [TestMethod] 
         public void CanAcceptAnInteger()
@@ -199,6 +201,26 @@ namespace CalcTestN
             Assert.AreEqual("2", result);
         }
 
-       
+        // tests for lastq bad input 
+        //no input 
+        //invaild then lastq
+
+        [TestMethod]
+        public void UserAskLastQAfterEnteringInvalidInput()
+        {
+            Stack.lastQuestion = "lastq";
+            Evaulate evaulate = new Evaulate();
+            string result = evaulate.Evaluate("lastq");
+            Assert.AreEqual("lastq", result);
+        }
+
+        [TestMethod]
+        public void UserFailedtoEnterInput()
+        {
+            Stack.lastQuestion = null;
+            Evaulate evaulate = new Evaulate();
+           // object obj = null;
+            Assert.IsTrue (Stack.lastQuestion == null);
+        }
     }
 }
