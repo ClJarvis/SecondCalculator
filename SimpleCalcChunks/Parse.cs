@@ -29,7 +29,15 @@ namespace SimpleCalcChunks
 
             }
            
-            throw new ArgumentException("Invalid Input you did not include a mathmatic symbol");
+            throw new ArgumentException("Invalid A");
+            try
+            {
+                throw new ArgumentException("Invalid B Input you did not include a mathmatic symbol");
+            }
+            catch
+            {
+                throw new ArgumentException("Invalid  C Input you did not include a mathmatic symbol");
+            }
         }
 
        /*   public int Evaluate(string input)

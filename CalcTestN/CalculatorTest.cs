@@ -108,6 +108,7 @@ namespace CalcTestN
             Assert.AreEqual("8", indexOne[1]);
         }
 
+      
 
         /// <summary>
         /// Math Operation Tests //////////////////////////////////////////////////////
@@ -117,6 +118,33 @@ namespace CalcTestN
         public void AddintionTest()
         {
             int answer = Addition.AddNum(new string[] { "20", "5" });
+            Assert.AreEqual(answer, 25);
+        }
+
+        [TestMethod]
+        public void CanAddTwoNegativeNumbers()
+        {
+            int answer = Addition.AddNum(new string[] { "-20", "-5" });
+            Assert.AreEqual(answer, -25);
+        }
+
+      /*  [TestMethod]
+        [ExpectedException(typeof(System.DivideByZeroException))]
+        public void AddTwoStringBadInput()
+        {
+            string input1 = "1";
+            string input2 = "2";
+            Addition operation_class = new Addition();
+            
+           
+        }*/
+
+        [TestMethod] 
+        public void CanAcceptAnInteger()
+        {
+            int x = 20;
+            int y = 5;
+            int answer = 25;
             Assert.AreEqual(answer, 25);
         }
 
