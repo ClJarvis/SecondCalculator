@@ -10,6 +10,7 @@ namespace SimpleCalcChunks
     {
         
         private Char[] delimiterChars = { '+', '-', '*', '/', '%' };
+        private Char[] constants = { 'a', 'b', 'c' };
 
         public string[] GetNumbers(string input)
         {
@@ -32,8 +33,21 @@ namespace SimpleCalcChunks
             throw new ArgumentException("Invalid Input");
         }
 
-        
-          }
+        public char GetConstant(string input)
+        {
+            foreach (char character in constants)
+            {
+                if (input.Contains(character))
+                {
+                    return character;
+                }
+
+            }
+
+            throw new ArgumentException("Sorry that is not a correct constant. It must a single lower case letter. Please retry");
+        }
+
+    }
           
 
 

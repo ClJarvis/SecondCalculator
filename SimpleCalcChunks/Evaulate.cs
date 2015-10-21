@@ -33,6 +33,7 @@ namespace SimpleCalcChunks
                 var operans = parse.GetNumbers(input);
                 var op = parse.GetOperator(input);
                 var result = 0;
+                var constant = parse.GetConstant(input);
 
 
                 switch (op)

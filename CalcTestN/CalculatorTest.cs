@@ -128,16 +128,16 @@ namespace CalcTestN
             Assert.AreEqual(answer, -25);
         }
 
-         [TestMethod]
+      /*   [TestMethod]
           [ExpectedException(typeof(System.DivideByZeroException))]
           public void AddTwoStringBadInput()
           {
               string input1 = "1";
               string input2 = "2";
               Addition operation_class = new Addition();
-             // operation_class.AddNum(input1, input2);
+              operation_class.AddNum(input1, input2);
         }
-     
+     */
 
         [TestMethod] 
         public void CanAcceptAnInteger()
@@ -184,6 +184,9 @@ namespace CalcTestN
             Assert.IsTrue(true);
         }
 
+        /// <summary>
+        /// Command Tests //////////////////////////////////////////////////////////////////////
+        /// </summary>
         [TestMethod]
         public void UserentersLastQuestion()
         {
@@ -222,5 +225,16 @@ namespace CalcTestN
            // object obj = null;
             Assert.IsTrue (Stack.lastQuestion == null);
         }
-    }
+
+        ///Constant Tests //////////////////////////////////////////////////////////////
+        [TestMethod]
+        public void UserCanEnterAConstant()
+        {
+            var calc = new Parse();
+            var constant = calc.GetConstant("a");
+            var expected = 'a';
+            Assert.AreEqual(expected, constant);
+
+        }
+    } 
 }
