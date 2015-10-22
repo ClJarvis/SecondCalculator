@@ -32,8 +32,28 @@ namespace SimpleCalcChunks
               {
                 Parse parse = new Parse();
                 var constant = parse.GetConstant(input);
+              
                 return input; //ask for int to set to constant
-               
+                Dictionary<string, int> openWith =
+                 new Dictionary<string, int>();
+
+       
+                openWith.Add("a", 15);
+                openWith.Add("b", 7);
+                openWith.Add("c", 9);
+                openWith.Add("d", 10);
+
+                // The Add method throws an exception if the new key is 
+                // already in the dictionary.
+                try
+                {
+                    // openWith.Add("a", 15);
+                    Console.WriteLine("enter a number");
+                }
+                catch (ArgumentException)
+                {
+                    Console.WriteLine("An element with Key = \"a\" already exists.");
+                }
             }
             else
             {
