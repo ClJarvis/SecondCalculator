@@ -234,7 +234,27 @@ namespace CalcTestN
             var constant = calc.GetConstant("a");
             var expected = 'a';
             Assert.AreEqual(expected, constant);
+        }
 
+        [TestMethod]
+        public void UserCanSetAConstant()
+        {
+            var a = 5;
+            var calc = a + "20";
+            int answer = Addition.AddNum(new string[] { "20", "a" });
+            Assert.AreEqual(answer, 25);
+           // var expected = 25;
+           // Assert.AreEqual(expected, 25);
+        }
+
+        [TestMethod]
+        public void UndefinedConstantsCannotBeUsed()
+        {
+           
+            var b = 0;
+            {
+            //    throw Exception;
+            }
         }
     } 
 }

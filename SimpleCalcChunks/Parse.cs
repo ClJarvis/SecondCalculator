@@ -46,7 +46,7 @@ namespace SimpleCalcChunks
 
             throw new ArgumentException("Sorry that is not a correct constant. It must a single lower case letter. Please retry");
         }
-
+        
     }
           
 

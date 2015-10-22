@@ -13,7 +13,7 @@ namespace SimpleCalcChunks
         {
             if (input == "lastq")
             {
-                if( Stack.lastQuestion ==  null)
+                if (Stack.lastQuestion == null)
                 {
                     return "No Operation entered";
                 }
@@ -27,13 +27,20 @@ namespace SimpleCalcChunks
                 }
                 return Stack.last;
             }
+
+            else if (input == "a")
+              {
+                Parse parse = new Parse();
+                var constant = parse.GetConstant(input);
+                return input;
+            }
             else
             {
                 Parse parse = new Parse();
                 var operans = parse.GetNumbers(input);
                 var op = parse.GetOperator(input);
                 var result = 0;
-                var constant = parse.GetConstant(input);
+               
 
 
                 switch (op)
