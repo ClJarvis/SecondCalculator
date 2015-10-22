@@ -28,11 +28,12 @@ namespace SimpleCalcChunks
                 return Stack.last;
             }
 
-            else if (input == "a")
+            else if (input == "a")  ////////////////////////////////////////////////////
               {
                 Parse parse = new Parse();
                 var constant = parse.GetConstant(input);
-                return input;
+                return input; //ask for int to set to constant
+               
             }
             else
             {
