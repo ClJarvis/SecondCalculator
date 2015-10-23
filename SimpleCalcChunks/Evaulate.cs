@@ -27,6 +27,14 @@ namespace SimpleCalcChunks
                 }
                 return Stack.last;
             }
+            else if (input == "exit")
+            {
+                if (Stack.exit == null)
+                {
+                    return Stack.exit;
+                }
+                return Stack.exit;
+            }
 
             else if (input == "a")  ////////////////////////////////////////////////////
               {
@@ -34,20 +42,20 @@ namespace SimpleCalcChunks
                 var constant = parse.GetConstant(input);
               
                 return input; //ask for int to set to constant
-                Dictionary<string, int> openWith =
+                Dictionary<string, int> setValue =
                  new Dictionary<string, int>();
 
-       
-                openWith.Add("a", 15);
-                openWith.Add("b", 7);
-                openWith.Add("c", 9);
-                openWith.Add("d", 10);
+                ///Convert.ToInt32(input[1])
+                setValue.Add("a", Convert.ToInt32(input[1]));
+                setValue.Add("b", 7);
+                setValue.Add("c", 9);
+                setValue.Add("d", 10);
 
                 // The Add method throws an exception if the new key is 
                 // already in the dictionary.
                 try
                 {
-                    // openWith.Add("a", 15);
+                    setValue.Add("a", 15);
                     Console.WriteLine("enter a number");
                 }
                 catch (ArgumentException)
@@ -87,6 +95,8 @@ namespace SimpleCalcChunks
                 Stack.last = result.ToString();
                 Stack.lastQuestion = input;
                 return result.ToString();
+                Stack.exit = input;
+                return Stack.exit;
             }
         }
 

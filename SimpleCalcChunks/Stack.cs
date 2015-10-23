@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,14 @@ namespace SimpleCalcChunks
         public static string lastQuestion { get; set; }
         public static string last { get; set; }
         public static string exit { get; set; }
+       // public static void Exit { get; set; }
         public static char constant { get; set; }
+
+    /*    public static void exit()
+        {
+            CancelEventArgs e;
+        }
+        */
     }
+    
 }
