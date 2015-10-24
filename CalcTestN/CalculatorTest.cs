@@ -1,6 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimpleCalcChunks;
+using System.Collections.Generic;
+
 namespace CalcTestN
 {
     [TestClass]
@@ -255,6 +257,18 @@ namespace CalcTestN
             {
             //    throw Exception;
             }
+        }
+
+        [TestMethod]
+        public void UserCanSetACostantValueViaString()
+        {
+            string input = "a = 15";
+            Parse parse = new Parse();
+           StringSplitOptions.RemoveEmptyEntries on equalMarks. 
+            new Dictionary<char, int>();
+            var expected = new Dictionary<char, int>();
+            Assert.AreEqual(expected, Dictionary < a, 15 >);
+
         }
     } 
 }

@@ -40,10 +40,13 @@ namespace SimpleCalcChunks
               {
                 Parse parse = new Parse();
                 var constant = parse.GetConstant(input);
-              
-                return input; //ask for int to set to constant
-                Dictionary<string, int> setValue =
-                 new Dictionary<string, int>();
+
+              // Console.WriteLine("enter a number");
+                //return input;
+              //  Stack.constant = Convert.ToInt32(input[0]));
+                
+                Dictionary<string, int> 
+                setValue = new Dictionary<string, int>();
 
                 ///Convert.ToInt32(input[1])
                 setValue.Add("a", Convert.ToInt32(input[1]));

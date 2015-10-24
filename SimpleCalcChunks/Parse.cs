@@ -10,7 +10,7 @@ namespace SimpleCalcChunks
     {
         
         private Char[] delimiterChars = { '+', '-', '*', '/', '%' };
-        private Char[] constants = { 'a', 'b', 'c' };
+        public Char[] constants = { 'a', 'b', 'c' };
 
         public string[] GetNumbers(string input)
         {
