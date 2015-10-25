@@ -36,18 +36,18 @@ namespace SimpleCalcChunks
                 return Stack.exit;
             }
 
-            else if (input == "a")  ////////////////////////////////////////////////////
+            else if (input == "a=15")  ////////////////////////////////////////////////////
               {
                 Parse parse = new Parse();
                 var constant = parse.GetConstant(input);
 
-              // Console.WriteLine("enter a number");
-                //return input;
+              
+                
               //  Stack.constant = Convert.ToInt32(input[0]));
                 
                 Dictionary<string, int> 
                 setValue = new Dictionary<string, int>();
-
+                Dictionary<string, int> dict = new Dictionary<string, int>();
                 ///Convert.ToInt32(input[1])
                 setValue.Add("a", Convert.ToInt32(input[1]));
                 setValue.Add("b", 7);
@@ -56,6 +56,7 @@ namespace SimpleCalcChunks
 
                 // The Add method throws an exception if the new key is 
                 // already in the dictionary.
+                return input;
                 try
                 {
                     setValue.Add("a", 15);
@@ -92,6 +93,10 @@ namespace SimpleCalcChunks
                     case '%':
                         result = Modulus.ModNum(operans);
                         break;
+               /*     case '=':
+                        result = Constants.ToDictonary(operans);
+                        break;
+                        */
                     default:
                         throw new ArgumentException("incorrect format");
                 }

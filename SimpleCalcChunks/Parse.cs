@@ -9,7 +9,7 @@ namespace SimpleCalcChunks
     public class Parse  ///static??
     {
         
-        private Char[] delimiterChars = { '+', '-', '*', '/', '%' };
+        private Char[] delimiterChars = { '+', '-', '*', '/', '%', '=' };
         public Char[] constants = { 'a', 'b', 'c' };
 
         public string[] GetNumbers(string input)

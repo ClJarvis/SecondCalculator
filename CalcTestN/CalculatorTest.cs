@@ -242,11 +242,6 @@ namespace CalcTestN
         public void UserCanSetAConstant()
         {
             var a = 5;
-            var calc = a + "20";
-            int answer = Addition.AddNum(new string[] { "20", "a" });
-            Assert.AreEqual(answer, 25);
-           // var expected = 25;
-           // Assert.AreEqual(expected, 25);
         }
 
         [TestMethod]
@@ -264,10 +259,11 @@ namespace CalcTestN
         {
             string input = "a = 15";
             Parse parse = new Parse();
-           StringSplitOptions.RemoveEmptyEntries on equalMarks. 
-            new Dictionary<char, int>();
-            var expected = new Dictionary<char, int>();
-            Assert.AreEqual(expected, Dictionary < a, 15 >);
+            //StringSplitOptions.RemoveEmptyEntries on equalMarks.
+            Dictionary<string, int> dict = new Dictionary<string, int>();
+            
+            var expected = new Dictionary<string, int>();
+            Assert.AreEqual(expected, input);
 
         }
     } 
