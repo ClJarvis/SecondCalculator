@@ -263,7 +263,7 @@ namespace CalcTestN
             Dictionary<string, int> dict = new Dictionary<string, int>();
             
             var expected = new Dictionary<string, int>();
-            Assert.AreEqual(expected, input);
+            Assert.AreEqual(expected, Constants.Dictionary);
 
         }
     } 

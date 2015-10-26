@@ -11,15 +11,15 @@ namespace SimpleCalcChunks
     {
         public static string lastQuestion { get; set; }
         public static string last { get; set; }
-        public static string exit { get; set; }
+       // public  string exit { get; set; }
        // public static void Exit { get; set; }
         public static char constant { get; set; }
 
-    /*    public static void exit()
+        public static void exit()
         {
             CancelEventArgs e;
         }
-        */
+        
     }
     
 }

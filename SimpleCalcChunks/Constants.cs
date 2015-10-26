@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 namespace SimpleCalcChunks
 {
-    public static class Constants
+    public class Constants
     {
        
-           // Dictionary<string, int> dict = new Dictionary<string, int>();
-       // {
-            //throw new NotImplementedException();
-       // }
+        Dictionary<string, int> dict = new Dictionary<string, int>();
+
+        public static string Dictionary { get; set; }
+        public static string lastQuestion { get; set; }
+ 
+      }
     }
-}
+    
+

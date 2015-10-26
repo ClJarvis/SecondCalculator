@@ -27,15 +27,16 @@ namespace SimpleCalcChunks
                 }
                 return Stack.last;
             }
-            else if (input == "exit")
+            /////////////////////////////////////////////////EXIT ATTEMPT //////////////////////////////
+          /*  else if (input == "exit")
             {
                 if (Stack.exit == null)
                 {
-                    return Stack.exit;
+                    Stack.exit();
                 }
-                return Stack.exit;
+                Stack.exit();
             }
-
+            */
             else if (input == "a=15")  ////////////////////////////////////////////////////
               {
                 Parse parse = new Parse();
@@ -103,8 +104,8 @@ namespace SimpleCalcChunks
                 Stack.last = result.ToString();
                 Stack.lastQuestion = input;
                 return result.ToString();
-                Stack.exit = input;
-                return Stack.exit;
+               
+                //return Stack.exit;
             }
         }
 
