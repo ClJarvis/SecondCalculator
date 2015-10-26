@@ -28,7 +28,7 @@ namespace SimpleCalcChunks
                 return Stack.last;
             }
             /////////////////////////////////////////////////EXIT ATTEMPT //////////////////////////////
-          /*  else if (input == "exit")
+       /*     else if (input == "exit")
             {
                 if (Stack.exit == null)
                 {

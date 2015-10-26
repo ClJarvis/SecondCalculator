@@ -260,11 +260,14 @@ namespace CalcTestN
             string input = "a = 15";
             Parse parse = new Parse();
             //StringSplitOptions.RemoveEmptyEntries on equalMarks.
-            Dictionary<string, int> dict = new Dictionary<string, int>();
+            Dictionary<char, int> dict = new Dictionary<char, int>();
             
-            var expected = new Dictionary<string, int>();
-            Assert.AreEqual(expected, Constants.Dictionary);
+            var constants = new Constants();
+            char key = parse.ExtractCharacter(input);
+            int value = parse.ExtractValue(input);
+            constants.calculatorConstants.Add(key, value);
 
+            Assert.AreEqual(expected, 15);
         }
     } 
 }
