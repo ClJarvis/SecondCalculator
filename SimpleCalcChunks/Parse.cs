@@ -9,8 +9,8 @@ namespace SimpleCalcChunks
     public class Parse  ///static??
     {
         
-        private Char[] delimiterChars = { '+', '-', '*', '/', '%', '=' };
-        public Char[] constants = { 'a', 'b', 'c' };
+        private Char[] delimiterChars = { '+', '-', '*', '/', '%' };
+        public Char[] constants = { '=' };
 
         public string[] GetNumbers(string input)
         {
@@ -33,7 +33,7 @@ namespace SimpleCalcChunks
             throw new ArgumentException("Invalid Input");
         }
 
-        public char GetConstant(string input)
+    /*    public char GetConstant(string input)
         {
             foreach (char character in constants)
             {
@@ -46,10 +46,20 @@ namespace SimpleCalcChunks
 
             throw new ArgumentException("Sorry that is not a correct constant. It must a single lower case letter. Please retry");
         }
-
+        */
         internal char GetNumbers(Func<string> toString)
         {
             throw new NotImplementedException();
+        }
+
+        public char ExtractCharacter(string input)
+        {
+            foreach (char constant in constants)
+                if (input.Contains('='))
+            {
+                return constant;
+            }
+            throw new ArgumentException("Does Not set a constant to a value");
         }
     }
           

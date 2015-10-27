@@ -40,9 +40,7 @@ namespace SimpleCalcChunks
             else if (input == "a=15")  ////////////////////////////////////////////////////
               {
                 Parse parse = new Parse();
-                var constant = parse.GetConstant(input);
-
-              
+               // var constant = parse.GetConstant(input); 
                 
               //  Stack.constant = Convert.ToInt32(input[0]));
                 
@@ -94,10 +92,6 @@ namespace SimpleCalcChunks
                     case '%':
                         result = Modulus.ModNum(operans);
                         break;
-               /*     case '=':
-                        result = Constants.ToDictonary(operans);
-                        break;
-                        */
                     default:
                         throw new ArgumentException("incorrect format");
                 }
