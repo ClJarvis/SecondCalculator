@@ -13,13 +13,14 @@ namespace SimpleCalcChunks
         {
             int x = 0;
             while (true)
+
             {
                 
                 Console.WriteLine("[" + x + "]>");
                 string input = Console.ReadLine();
                 Evaulate calculator = new Evaulate();
-            
-                try
+               
+                    try
                 {
                     var result = calculator.Evaluate(input);
                     Console.WriteLine("   = " + result);
@@ -32,6 +33,7 @@ namespace SimpleCalcChunks
                 }
 
                 x++;
+                Stack.exit();
             }
         }
     }

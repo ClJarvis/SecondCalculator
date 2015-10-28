@@ -19,6 +19,16 @@ namespace SimpleCalcChunks
 
         }
 
+        internal static void ExtractValue()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static string ExtractCharacter()
+        {
+            throw new NotImplementedException();
+        }
+
         public char GetOperator(string input)
         {
             foreach (char character in delimiterChars)
@@ -48,15 +58,21 @@ namespace SimpleCalcChunks
             throw new ArgumentException("Does Not set a constant to a value");
         }
 
-     /*   public int ExtractValue(string input)
+        public int ExtractValue(string input)
         { // Try splitting on an '=' and then parseInt from the second index of the array that returns
 
           
-                return input.Split('=');
-           var value = Int32.Parse(input[1]);
-           
-        } */
-      }
+                 input.Split('=');
+                var value = ParseInt(input[2]);
+               
+                return Convert.ToInt32(input[2]);
+        }
+
+        public object ParseInt(char v)
+        {
+            throw new NotImplementedException();
+        }
+    }
           
 
 

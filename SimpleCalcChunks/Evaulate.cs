@@ -8,14 +8,17 @@ using SimpleCalcChunks;
 namespace SimpleCalcChunks
 {
     public class Evaulate
+
     {
         public string Evaluate(string input)
+
         {
-         /*   if (input contains "=")
+                  if (input.Contains ("="))
             {
-                return Parse.ExtractCharacter
-            } */
-            if (input == "lastq")
+               Parse.ExtractCharacter();
+                Parse.ExtractValue();
+                   } 
+                if (input == "lastq")
             {
                 if (Stack.lastQuestion == null)
                 {
