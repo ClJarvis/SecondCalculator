@@ -15,11 +15,17 @@ namespace SimpleCalcChunks
        // public static void Exit { get; set; }
         public static char constant { get; set; }
 
-        public static void exit()
+        internal static string exit()
         {
-            CancelEventArgs e;
+            throw new NotImplementedException();
         }
-        
+
+        /*   public static void exit()
+           {
+               CancelEventArgs e;
+           }
+           */
+       }
+       
+
     }
-    
-}

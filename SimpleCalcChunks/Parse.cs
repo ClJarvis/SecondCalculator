@@ -33,20 +33,6 @@ namespace SimpleCalcChunks
             throw new ArgumentException("Invalid Input");
         }
 
-    /*    public char GetConstant(string input)
-        {
-            foreach (char character in constants)
-            {
-                if (input.Contains(character))
-                {
-                    return character;
-                }
-
-            }
-
-            throw new ArgumentException("Sorry that is not a correct constant. It must a single lower case letter. Please retry");
-        }
-        */
         internal char GetNumbers(Func<string> toString)
         {
             throw new NotImplementedException();
@@ -54,14 +40,23 @@ namespace SimpleCalcChunks
 
         public char ExtractCharacter(string input)
         {
-            foreach (char constant in constants)
+            foreach (char letter in input)
                 if (input.Contains('='))
             {
-                return constant;
+                return letter;
             }
             throw new ArgumentException("Does Not set a constant to a value");
         }
-    }
+
+     /*   public int ExtractValue(string input)
+        { // Try splitting on an '=' and then parseInt from the second index of the array that returns
+
+          
+                return input.Split('=');
+           var value = Int32.Parse(input[1]);
+           
+        } */
+      }
           
 
 

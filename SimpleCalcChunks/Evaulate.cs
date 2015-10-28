@@ -11,6 +11,10 @@ namespace SimpleCalcChunks
     {
         public string Evaluate(string input)
         {
+         /*   if (input contains "=")
+            {
+                return Parse.ExtractCharacter
+            } */
             if (input == "lastq")
             {
                 if (Stack.lastQuestion == null)
@@ -28,52 +32,17 @@ namespace SimpleCalcChunks
                 return Stack.last;
             }
             /////////////////////////////////////////////////EXIT ATTEMPT //////////////////////////////
-       /*     else if (input == "exit")
+           else if (input == "exit")
             {
-                if (Stack.exit == null)
-                {
-                    Stack.exit();
-                }
-                Stack.exit();
+               return Stack.exit();
             }
-            */
-            else if (input == "a=15")  ////////////////////////////////////////////////////
-              {
-                Parse parse = new Parse();
-               // var constant = parse.GetConstant(input); 
-                
-              //  Stack.constant = Convert.ToInt32(input[0]));
-                
-                Dictionary<string, int> 
-                setValue = new Dictionary<string, int>();
-                Dictionary<string, int> dict = new Dictionary<string, int>();
-                ///Convert.ToInt32(input[1])
-                setValue.Add("a", Convert.ToInt32(input[1]));
-                setValue.Add("b", 7);
-                setValue.Add("c", 9);
-                setValue.Add("d", 10);
-
-                // The Add method throws an exception if the new key is 
-                // already in the dictionary.
-                return input;
-                try
-                {
-                    setValue.Add("a", 15);
-                    Console.WriteLine("enter a number");
-                }
-                catch (ArgumentException)
-                {
-                    Console.WriteLine("An element with Key = \"a\" already exists.");
-                }
-            }
+            
             else
             {
                 Parse parse = new Parse();
                 var operans = parse.GetNumbers(input);
                 var op = parse.GetOperator(input);
                 var result = 0;
-               
-
 
                 switch (op)
                 {
@@ -105,3 +74,35 @@ namespace SimpleCalcChunks
 
     }
 }
+
+/*
+ else if (input == "a=15")  ////////////////////////////////////////////////////
+              {
+                Parse parse = new Parse();
+               // var constant = parse.GetConstant(input); 
+                
+              //  Stack.constant = Convert.ToInt32(input[0]));
+                
+                Dictionary<string, int> 
+                setValue = new Dictionary<string, int>();
+                Dictionary<string, int> dict = new Dictionary<string, int>();
+                ///Convert.ToInt32(input[1])
+                setValue.Add("a", Convert.ToInt32(input[1]));
+                setValue.Add("b", 7);
+                setValue.Add("c", 9);
+                setValue.Add("d", 10);
+
+                // The Add method throws an exception if the new key is 
+                // already in the dictionary.
+                return input;
+                try
+                {
+                    setValue.Add("a", 15);
+                    Console.WriteLine("enter a number");
+                }
+                catch (ArgumentException)
+                {
+                    Console.WriteLine("An element with Key = \"a\" already exists.");
+                }
+            }
+*/
