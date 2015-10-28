@@ -59,10 +59,8 @@ namespace SimpleCalcChunks
         }
 
         public int ExtractValue(string input)
-        { // Try splitting on an '=' and then parseInt from the second index of the array that returns
-
-          
-                 input.Split('=');
+        { 
+                input.Split('=');
                 var value = ParseInt(input[2]);
                
                 return Convert.ToInt32(input[2]);
