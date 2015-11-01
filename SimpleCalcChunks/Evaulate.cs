@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SimpleCalcChunks;
+
 
 namespace SimpleCalcChunks
 {
@@ -70,8 +70,6 @@ namespace SimpleCalcChunks
                 Stack.last = result.ToString();
                 Stack.lastQuestion = input;
                 return result.ToString();
-               
-                //return Stack.exit;
             }
         }
 

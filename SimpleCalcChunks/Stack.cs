@@ -23,8 +23,9 @@ namespace SimpleCalcChunks
         */
           public static string exit()
            {
-               CancelEventArgs e;
-            return "Bye Felica";
+              CancelEventArgs e;
+              return  "Bye Felica";
+            
         }
            
        }
