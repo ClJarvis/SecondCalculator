@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace SimpleCalcChunks
 {
     public class Evaulate
@@ -13,12 +12,12 @@ namespace SimpleCalcChunks
         public string Evaluate(string input)
 
         {
-                  if (input.Contains ("="))
+            if (input.Contains("="))
             {
-               Parse.ExtractCharacter();
+                Parse.ExtractCharacter();
                 Parse.ExtractValue();
-                   } 
-                if (input == "lastq")
+            }
+            if (input == "lastq")
             {
                 if (Stack.lastQuestion == null)
                 {
@@ -35,11 +34,10 @@ namespace SimpleCalcChunks
                 return Stack.last;
             }
             /////////////////////////////////////////////////EXIT ATTEMPT //////////////////////////////
-           else if (input == "exit")
+            else if (input == "exit")
             {
-               return Stack.exit();
+                return "Bye Felica!!!!!(Evaulate Class message)";
             }
-            
             else
             {
                 Parse parse = new Parse();
@@ -77,7 +75,7 @@ namespace SimpleCalcChunks
 }
 
 /*
- else if (input == "a=15")  ////////////////////////////////////////////////////
+ else if (input contains "=")  //////////////////////////////////////////////////////////////
               {
                 Parse parse = new Parse();
                // var constant = parse.GetConstant(input); 

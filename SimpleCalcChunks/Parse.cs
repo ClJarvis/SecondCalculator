@@ -61,11 +61,12 @@ namespace SimpleCalcChunks
         public int ExtractValue(string input)
         { 
                 input.Split('=');
-                var value = int.Parse(input);
-            ///tryparse 
+                var value =  Convert.ToChar(input[2]);
+               
+            ///Tryparse 
             /// public static bool TryParse(
-            //string s,
-        	///out int result
+            //string input,
+            ///out int result
             ///)
 
 

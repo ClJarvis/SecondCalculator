@@ -12,7 +12,8 @@ namespace SimpleCalcChunks
         static void Main(string[] args)
         {
             int x = 0;
-            while (true)
+            bool RunCalcuate = true;
+            while (RunCalcuate)
 
             {
                 
@@ -33,7 +34,14 @@ namespace SimpleCalcChunks
                 }
 
                 x++;
-                Stack.exit();
+              
+               // if (Stack.exit() == "Bye Felica")
+                {
+                  //  RunCalcuate = false;
+                     //Stack.exit();
+                   
+                }
+                
             }
         }
     }
