@@ -235,7 +235,7 @@ namespace CalcTestN
             var calc = new Parse();
            // var constant = calc.GetConstant("a");
             var expected = 'a';
-          //  Assert.AreEqual(expected, constant);
+          // Assert.AreEqual(expected, constant);
         }
 
         [TestMethod]
@@ -259,13 +259,13 @@ namespace CalcTestN
         {
             string input = "a = 15";
             Parse parse = new Parse();
-            //StringSplitOptions.RemoveEmptyEntries on equalMarks.
+           
             Dictionary<char, int> dict = new Dictionary<char, int>();
             
             var constants = new Constants();
             char key = parse.ExtractCharacter(input);
             int value = parse.ExtractValue(input);
-            constants.calculatorConstants.Add(key, value);
+//            constants.calculatorConstants.Add(key, value);
             var expected = 15;
             Assert.AreEqual(expected, 15);
         }

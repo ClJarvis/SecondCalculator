@@ -60,22 +60,21 @@ namespace SimpleCalcChunks
 
         public int ExtractValue(string input)
         {
-            var splitInput = input.Split('=');     // so splitInput looks something like ['x', '13']
-            return int.Parse(splitInput[1]);
-
-
-            ///Tryparse 
+            if (input.Contains('='))
+            {
+                var splitInput = input.Split('=');     //splitInput looks something like ['x', '13']
+                return int.Parse(splitInput['1']);
+            }
+                
+                ///Tryparse 
             /// public static bool TryParse(
             //string input,
             ///out int result
 
-           // return Convert.ToInt32(input[2]);
+           return Convert.ToInt32(input[2]);
         }
 
-        public object ParseInt(char v)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
           
 

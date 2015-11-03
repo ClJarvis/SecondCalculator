@@ -14,8 +14,11 @@ namespace SimpleCalcChunks
         {
             if (input.Contains("="))
             {
-                Parse.ExtractCharacter();
-                Parse.ExtractValue();
+                {
+                    Parse.ExtractCharacter();
+                    Parse.ExtractValue();
+                
+            }
             }
             if (input == "lastq")
             {
@@ -104,4 +107,14 @@ namespace SimpleCalcChunks
                     Console.WriteLine("An element with Key = \"a\" already exists.");
                 }
             }
+
+
+    ////////////////////////////////////////////////////////////////////////////////////////
+     if (input.Contains("="))
+            {
+                Parse.ExtractCharacter();
+                Parse.ExtractValue();
+            }
+
+
 */
