@@ -59,18 +59,17 @@ namespace SimpleCalcChunks
         }
 
         public int ExtractValue(string input)
-        { 
-                input.Split('=');
-                var value =  Convert.ToChar(input[2]);
-               
+        {
+            var splitInput = input.Split('=');     // so splitInput looks something like ['x', '13']
+            return int.Parse(splitInput[1]);
+
+
             ///Tryparse 
             /// public static bool TryParse(
             //string input,
             ///out int result
-            ///)
 
-
-            return Convert.ToInt32(input[2]);
+           // return Convert.ToInt32(input[2]);
         }
 
         public object ParseInt(char v)
