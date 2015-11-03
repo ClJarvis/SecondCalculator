@@ -14,11 +14,13 @@ namespace SimpleCalcChunks
         {
             if (input.Contains("="))
             {
+                Parse.ExtractCharacter();
                 {
-                    Parse.ExtractCharacter();
-                    Parse.ExtractValue();
-                
-            }
+                    Parse parse = new Parse();
+                    var result = parse.ExtractValue(input);
+                 
+                     Parse.ExtractValue();   
+                }
             }
             if (input == "lastq")
             {
