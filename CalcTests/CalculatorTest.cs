@@ -259,15 +259,16 @@ namespace CalcTestN
         {
             string input = "a = 15";
             Parse parse = new Parse();
-           
+            //StringSplitOptions.RemoveEmptyEntries on equalMarks.
             Dictionary<char, int> dict = new Dictionary<char, int>();
             
             var constants = new Constants();
             char key = parse.ExtractCharacter(input);
-            int value = parse.ExtractValue(input);
+          int value = parse.ExtractValue(input['1']);
 //            constants.calculatorConstants.Add(key, value);
             var expected = 15;
             Assert.AreEqual(expected, 15);
+          
         }
     } 
 }

@@ -44,7 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Addition.cs" />
-    <Compile Include="CalculatorTest.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Division.cs" />
     <Compile Include="Evaulate.cs" />

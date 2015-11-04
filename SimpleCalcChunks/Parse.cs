@@ -74,7 +74,11 @@ namespace SimpleCalcChunks
            return Convert.ToInt32(input[2]);
         }
 
-       
+        public int ExtractValue(char v)
+        {
+            throw new NotImplementedException();
+        }
+        
     }
           
 

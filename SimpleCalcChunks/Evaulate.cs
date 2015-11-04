@@ -15,12 +15,19 @@ namespace SimpleCalcChunks
             if (input.Contains("="))
             {
                 Parse.ExtractCharacter();
+                string letter = "a";
+                return letter;
                 {
                     Parse parse = new Parse();
                     var result = parse.ExtractValue(input);
                  
                      Parse.ExtractValue();   
+             
+                   // string letter  = "a";
+                    int value = 5;
+                    return value.ToString();
                 }
+               
             }
             if (input == "lastq")
             {
