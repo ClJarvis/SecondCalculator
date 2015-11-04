@@ -257,17 +257,19 @@ namespace CalcTestN
         [TestMethod]
         public void UserCanSetACostantValueViaString()
         {
-            string input = "a = 15";
+            string input = "a=15";
             Parse parse = new Parse();
-            //StringSplitOptions.RemoveEmptyEntries on equalMarks.
+           
             Dictionary<char, int> dict = new Dictionary<char, int>();
             
             var constants = new Constants();
             char key = parse.ExtractCharacter(input);
-            int value = parse.ExtractValue(input['1']);
-//            constants.calculatorConstants.Add(key, value);
-            var expected = 15;
-            Assert.AreEqual(expected, 15);
+            // int value = parse.ExtractValue(input['1']);
+            var splitInput = input.Split('=');
+            int.Parse(splitInput[1]);
+    
+            var expected = 15.ToString();
+            Assert.AreEqual(expected, splitInput[1]);
            
         }
     } 

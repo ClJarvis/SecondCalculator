@@ -11,7 +11,7 @@ namespace SimpleCalcChunks
     {
         public static string lastQuestion { get; set; }
         public static string last { get; set; }
-       //public  string exit { get; set; }
+        //public  static string exit { get; set; }
         //public static void Exit { get; set; }
        //public static char constant { get; set; }
        public static Dictionary<char, int> constant = new Dictionary<char, int>();
@@ -22,12 +22,13 @@ namespace SimpleCalcChunks
                exit();
            }
            */
-        public static string exit()
+        public static string Exit()
            {
               //CancelEventArgs e;
-              return  "Bye Felica Stack Class" ;
-            
+              return "Bye Felica!" ;
+
         }
+        
            
        }
        

@@ -12,8 +12,9 @@ namespace SimpleCalcChunks
         static void Main(string[] args)
         {
             int x = 0;
-            bool RunCalcuate = true;
-            while (RunCalcuate)
+            bool RunCalcuate;
+            // bool RunCalcuate = true;
+            while (RunCalcuate = true) 
 
             {
                 
@@ -35,10 +36,12 @@ namespace SimpleCalcChunks
 
                 x++;
               
-               // if (Stack.exit() == "Bye Felica")
+                 if (Stack.Exit() == "exit")
+                    RunCalcuate = false;
+                    Stack.Exit();
                 {
-                  //  RunCalcuate = false;
-                     //Stack.exit();
+                   RunCalcuate = false;
+                   Stack.Exit();
                    
                 }
                 

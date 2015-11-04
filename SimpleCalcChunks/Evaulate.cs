@@ -48,7 +48,7 @@ namespace SimpleCalcChunks
             /////////////////////////////////////////////////EXIT ATTEMPT //////////////////////////////
             else if (input == "exit")
             {
-                return "Bye Felica!!!!!(Evaulate Class message)";
+                return Stack.Exit();
             }
             else
             {
