@@ -264,11 +264,11 @@ namespace CalcTestN
             
             var constants = new Constants();
             char key = parse.ExtractCharacter(input);
-          int value = parse.ExtractValue(input['1']);
+            int value = parse.ExtractValue(input['1']);
 //            constants.calculatorConstants.Add(key, value);
             var expected = 15;
             Assert.AreEqual(expected, 15);
-          
+           
         }
     } 
 }
