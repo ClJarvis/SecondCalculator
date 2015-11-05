@@ -11,6 +11,7 @@ namespace SimpleCalcChunks
         
         private Char[] delimiterChars = { '+', '-', '*', '/', '%' };
         public Char[] constants = { '=' };
+        internal static string input;
 
         public string[] GetNumbers(string input)
         {
@@ -62,7 +63,9 @@ namespace SimpleCalcChunks
         {
             if (input.Contains('='))
             {
+                Parse parse = new Parse();
                 var splitInput = input.Split('=');     //splitInput looks something like ['x', '13']
+              
                 return int.Parse(splitInput['1']);
             }
                 
@@ -71,7 +74,7 @@ namespace SimpleCalcChunks
             //string input,
             ///out int result
 
-           return Convert.ToInt32(input[2]);
+           return Convert.ToInt32(input[1]);
         }
 
       

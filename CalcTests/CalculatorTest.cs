@@ -206,9 +206,13 @@ namespace CalcTestN
             Assert.AreEqual("2", result);
         }
 
-        // tests for lastq bad input 
-        //no input 
-        //invaild then lastq
+        [TestMethod]
+        public void UserCanExitCalculator()
+        {          
+            Evaulate evaulate = new Evaulate();
+            string result = evaulate.Evaluate("exit");
+            Assert.AreEqual(Stack.Exit(), "Bye Felica!");
+        }
 
         [TestMethod]
         public void UserAskLastQAfterEnteringInvalidInput()
@@ -238,11 +242,7 @@ namespace CalcTestN
           // Assert.AreEqual(expected, constant);
         }
 
-        [TestMethod]
-        public void UserCanSetAConstant()
-        {
-            var a = 5;
-        }
+      
 
         [TestMethod]
         public void UndefinedConstantsCannotBeUsed()
@@ -259,9 +259,7 @@ namespace CalcTestN
         {
             string input = "a=15";
             Parse parse = new Parse();
-           
             Dictionary<char, int> dict = new Dictionary<char, int>();
-            
             var constants = new Constants();
             char key = parse.ExtractCharacter(input);
             // int value = parse.ExtractValue(input['1']);
@@ -271,6 +269,17 @@ namespace CalcTestN
             var expected = 15.ToString();
             Assert.AreEqual(expected, splitInput[1]);
            
+        }
+
+        [TestMethod]
+        public void UserCanSetACostantValueViaString2()
+        { 
+            string input = "a=15";
+            Parse parse = new Parse();
+            parse.ExtractCharacter(input);
+            char actual = parse.ExtractCharacter(input);
+            char expected = 'a';
+            Assert.AreEqual(expected, actual);
         }
     } 
 }
