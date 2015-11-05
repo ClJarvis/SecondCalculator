@@ -12,8 +12,35 @@ namespace SimpleCalcChunks
         public string Evaluate(string input)
 
         {
-            
-            if (input == "lastq")
+
+
+            if (input.Contains("="))
+            {
+                Parse.ExtractCharacter();
+                string letter = "a";
+                return letter;
+                {
+                    Parse parse = new Parse();
+                    var setConstant = parse.ExtractValue(input);
+
+                    Parse.ExtractValue();
+                    // string letter  = "a";
+                    int value = 5;
+                    var result = 0;
+                    return value.ToString();
+
+                    switch(setConstant)
+                    {
+                        case '=':
+                            result = parse.ExtractValue(input);
+                            break;
+                        default:
+                            throw new ArgumentException("Cannot set constant");
+                    }
+                }
+            }
+
+                if (input == "lastq")
             {
                 if (Stack.lastQuestion == null)
                 {
