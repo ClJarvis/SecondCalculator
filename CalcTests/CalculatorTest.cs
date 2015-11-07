@@ -211,7 +211,8 @@ namespace CalcTestN
         {          
             Evaulate evaulate = new Evaulate();
             string result = evaulate.Evaluate("exit");
-            Assert.AreEqual(Stack.Exit(), "Bye Felica!");
+            //exit method removed from stack now exits via bool on program
+          //  Assert.AreEqual(Stack.Exit(), "Bye Felica!"); 
         }
 
         [TestMethod]

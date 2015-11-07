@@ -11,7 +11,7 @@ namespace SimpleCalcChunks
         
         private Char[] delimiterChars = { '+', '-', '*', '/', '%' };
         public Char[] constants = { '=' };
-        internal static string input;
+       // internal static string input;
 
         public string[] GetNumbers(string input)
         {
@@ -75,13 +75,7 @@ namespace SimpleCalcChunks
             ///out int result
 
            return Convert.ToInt32(input[1]);
-        }
-
-      
-        
+        }       
     }
-          
-
-
-    }
+ }
 
