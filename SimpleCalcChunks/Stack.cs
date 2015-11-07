@@ -7,13 +7,23 @@ using System.Threading.Tasks;
 
 namespace SimpleCalcChunks
 {
-    public static class Stack
+    public class Stack
     {
         public static string lastQuestion { get; set; }
         public static string last { get; set; }
-        //public static char constant { get; set; }
-        public static Dictionary<char, int> constant = new Dictionary<char, int>();
-     }
+        private Dictionary<char, int> constant = new Dictionary<char, int>();
+
+
+        public void SaveConstant(char key, int value ) 
+            {
+                
+            }
+
+         public int MyProperty(char key)
+            {
+                 return 0;
+             }
+      }
        
 
 }

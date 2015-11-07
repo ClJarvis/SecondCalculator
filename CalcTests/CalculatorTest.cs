@@ -194,7 +194,7 @@ namespace CalcTestN
         {
             Stack.lastQuestion = "1+1";
             Evaulate evaulate = new Evaulate();
-            string result = evaulate.Evaluate("lastq");
+            string result = evaulate.Calculuate("lastq");
             Assert.AreEqual("1+1", result);
         }
         [TestMethod]
@@ -202,7 +202,7 @@ namespace CalcTestN
         {
             Stack.last = "2";
             Evaulate evaulate = new Evaulate();
-            string result = evaulate.Evaluate("last");
+            string result = evaulate.Calculuate("last");
             Assert.AreEqual("2", result);
         }
 
@@ -210,7 +210,7 @@ namespace CalcTestN
         public void UserCanExitCalculator()
         {          
             Evaulate evaulate = new Evaulate();
-            string result = evaulate.Evaluate("exit");
+            string result = evaulate.Calculuate("exit");
             //exit method removed from stack now exits via bool on program
           //  Assert.AreEqual(Stack.Exit(), "Bye Felica!"); 
         }
@@ -220,7 +220,7 @@ namespace CalcTestN
         {
             Stack.lastQuestion = "lastq";
             Evaulate evaulate = new Evaulate();
-            string result = evaulate.Evaluate("lastq");
+            string result = evaulate.Calculuate("lastq");
             Assert.AreEqual("lastq", result);
         }
 
