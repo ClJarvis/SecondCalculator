@@ -12,22 +12,15 @@ namespace SimpleCalcChunks
         static void Main(string[] args)
         {
             int x = 0;
-            bool RunCalcuate;
-             //bool RunCalcuate = true;
-            while (RunCalcuate = true) 
-
-
+            while (true) 
 
             { 
                 Console.WriteLine("[" + x + "]>");
                 string input = Console.ReadLine();
                 Evaulate calculator = new Evaulate();
-                if (Stack.Exit() == "exit")
-                {
-                    RunCalcuate = false;
-                    Stack.Exit();
-                }
-
+      
+                        if (input.ToLower() == "exit" || input.ToLower() == "quit")
+                            break;
                     try
                     {
                     var result = calculator.Evaluate(input);
@@ -40,14 +33,13 @@ namespace SimpleCalcChunks
                     
                 }
 
-                x++;
-         
-            }
-            if (Stack.Exit() == "exit") { 
-                RunCalcuate = false;
-                Stack.Exit();
+                x++;         
+                    }
 
+                Console.WriteLine("Bye Felica!");
+                System.Threading.Tasks.Task.Delay(TimeSpan.FromSeconds(2)).Wait();
             }
+          
         }
     }
-}
+
