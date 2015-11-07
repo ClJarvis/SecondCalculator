@@ -36,8 +36,8 @@ namespace SimpleCalcChunks
                 x++;         
                     }
 
-                Console.WriteLine("Bye Felica!");
-                System.Threading.Tasks.Task.Delay(TimeSpan.FromSeconds(2)).Wait();
+                Console.WriteLine("Goodbye, Mr Bond!");
+                Task.Delay(TimeSpan.FromSeconds(2)).Wait();
             }
           
         }
