@@ -13,13 +13,13 @@ namespace SimpleCalcChunks
 
         {
 
-            if (input.Contains("="))
+         /*   if (input.Contains("="))
             {
                 Parse.ExtractCharacter();
                 string letter = "a";
                 return letter;
             }
-
+            */
                 if (input == "lastq")
             {
                 if (Stack.lastQuestion == null)
@@ -41,6 +41,10 @@ namespace SimpleCalcChunks
             {
                 return Stack.Exit();
             }
+
+        
+
+
             else
             {
                 Parse parse = new Parse();
@@ -72,7 +76,16 @@ namespace SimpleCalcChunks
                 Stack.lastQuestion = input;
                 return result.ToString();
             }
+            if (input.Contains("="))
+            {
+                Parse parse = new Parse();
+                Parse.ExtractCharacter();
+                string letter = "a";
+                return "hjjjjhjhhjhjhjhjhjhjhjhjhj";
+            }
+
         }
+
 
     }
 }
