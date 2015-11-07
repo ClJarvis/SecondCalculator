@@ -9,16 +9,16 @@ namespace SimpleCalcChunks
     public class Evaulate
 
     {
-        public string Evaluate(string input)
+        public string Calculuate(string input)  //Evaluate
 
         {
-            if (input.Contains("="))
+          /*  if (input.Contains("="))
             {
                 Parse.ExtractCharacter();
-                string letter = "a";
-                return letter;
+              //  string letter = "a";
+                //return letter;
             }
-
+            */
                 if (input == "lastq")
             {
                 if (Stack.lastQuestion == null)
@@ -69,6 +69,11 @@ namespace SimpleCalcChunks
             }
         }
 
+        internal void Calculuate(int v1, int v2)
+        {
+            // throw new NotImplementedException();
+           // return '0';
+        }
     }
 }
 

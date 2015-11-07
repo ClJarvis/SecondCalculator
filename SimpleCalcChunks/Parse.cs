@@ -10,8 +10,9 @@ namespace SimpleCalcChunks
     {
         
         private Char[] delimiterChars = { '+', '-', '*', '/', '%' };
-        public Char[] constants = { '=' };
-       // internal static string input;
+        // public Char[] constants = { '=' };
+        public char ConstantKey { get; set; }
+        public int ConstantValue { get; set; }
 
         public string[] GetNumbers(string input)
         {
@@ -22,12 +23,13 @@ namespace SimpleCalcChunks
 
         internal static void ExtractValue()
         {
-            throw new NotImplementedException();
+            Console.WriteLine( "hi there");
         }
 
-        internal static string ExtractCharacter()
+        public static string ExtractCharacter()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("hi there");
+            return "ooooooo";
         }
 
         public char GetOperator(string input)
@@ -74,7 +76,7 @@ namespace SimpleCalcChunks
             //string input,
             ///out int result
 
-           return Convert.ToInt32(input[1]);
+           return Convert.ToInt32(input[0]);
         }       
     }
  }
