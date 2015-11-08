@@ -16,13 +16,13 @@ namespace SimpleCalcChunks
 
         public void SaveConstant(char key, int value ) 
             {
-                
+            var constant = System.Collections.Generic.Dictionary < 'a'; '3'>
             }
 
-         public int MyProperty(char key)
+         public int RetrieveConstant(char key)
             {
                  return 0;
-             }
+            }
       }
        
 

@@ -262,7 +262,7 @@ namespace CalcTestN
             Parse parse = new Parse();
             Dictionary<char, int> dict = new Dictionary<char, int>();
             var constants = new Constants();
-            char key = parse.ExtractCharacter(input);
+            char key = parse.ExtractConstant(input);
             // int value = parse.ExtractValue(input['1']);
             var splitInput = input.Split('=');
             int.Parse(splitInput[1]);
@@ -277,8 +277,8 @@ namespace CalcTestN
         { 
             string input = "a=15";
             Parse parse = new Parse();
-            parse.ExtractCharacter(input);
-            char actual = parse.ExtractCharacter(input);
+            parse.ExtractConstant(input);
+            char actual = parse.ExtractConstant(input);
             char expected = 'a';
             Assert.AreEqual(expected, actual);
         }
