@@ -21,18 +21,23 @@ namespace SimpleCalcChunks
 
         }
 
-    /*    internal static void ExtractValue()
+        internal static Dictionary<char, int> ExtractConstant()
         {
-            Console.WriteLine( "hi there");
+            throw new NotImplementedException();
         }
 
-        public static string ExtractCharacter()
-        {
-            Console.WriteLine("hi there");
-            return "ooooooo";
-            
-        }
-        */
+        /*    internal static void ExtractValue()
+            {
+                Console.WriteLine( "hi there");
+            }
+
+            public static string ExtractCharacter()
+            {
+                Console.WriteLine("hi there");
+                return "ooooooo";
+
+            }
+            */
 
         public char GetOperator(string input)
         {
@@ -70,7 +75,7 @@ namespace SimpleCalcChunks
                 Parse parse = new Parse();
                 var splitInput = input.Split('=');    //splitInput looks something like ['x', '13']
               
-                return int.Parse(splitInput['1']);
+                return int.Parse(splitInput[1]);
             }
                 
                 ///Tryparse 

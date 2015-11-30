@@ -16,7 +16,11 @@ namespace SimpleCalcChunks
 
         public void SaveConstant(char key, int value ) 
             {
-            var constant = System.Collections.Generic.Dictionary < 'a'; '3'>
+                Parse parse = new Parse();
+                Stack stack = new Stack();
+            string input = null;
+            parse.ExtractConstant(input);
+                stack.SaveConstant(parse.ConstantKey, parse.ConstantValue);
             }
 
          public int RetrieveConstant(char key)
