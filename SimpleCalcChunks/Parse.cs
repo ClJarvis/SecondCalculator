@@ -21,22 +21,29 @@ namespace SimpleCalcChunks
 
         }
 
-        internal static void ExtractValue()
+        internal static Dictionary<char, int> ExtractConstant()
         {
-            Console.WriteLine( "hi there");
+            throw new NotImplementedException();
         }
 
-        public static string ExtractCharacter()
-        {
-            Console.WriteLine("hi there");
-            return "ooooooo";
-        }
+        /*    internal static void ExtractValue()
+            {
+                Console.WriteLine( "hi there");
+            }
+
+            public static string ExtractCharacter()
+            {
+                Console.WriteLine("hi there");
+                return "ooooooo";
+
+            }
+            */
 
         public char GetOperator(string input)
         {
             foreach (char character in delimiterChars)
             {
-                if (input.Contains(character))
+                if (input.Contains(character) || (input.Contains('=')))
                 {
                     return character;
                 }
@@ -51,12 +58,12 @@ namespace SimpleCalcChunks
             throw new NotImplementedException();
         }
 
-        public char ExtractCharacter(string input)
+        public char ExtractConstant(string input)
         {
-            foreach (char letter in input)
+            foreach (char key in input)
                 if (input.Contains('='))
             {
-                return letter;
+                return key;
             }
             throw new ArgumentException("Does Not set a constant to a value");
         }
@@ -66,9 +73,9 @@ namespace SimpleCalcChunks
             if (input.Contains('='))
             {
                 Parse parse = new Parse();
-                var splitInput = input.Split('=');     //splitInput looks something like ['x', '13']
+                var splitInput = input.Split('=');    //splitInput looks something like ['x', '13']
               
-                return int.Parse(splitInput['1']);
+                return int.Parse(splitInput[1]);
             }
                 
                 ///Tryparse 

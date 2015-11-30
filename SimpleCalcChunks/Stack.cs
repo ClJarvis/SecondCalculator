@@ -16,13 +16,17 @@ namespace SimpleCalcChunks
 
         public void SaveConstant(char key, int value ) 
             {
-                
+                Parse parse = new Parse();
+                Stack stack = new Stack();
+            string input = null;
+            parse.ExtractConstant(input);
+                stack.SaveConstant(parse.ConstantKey, parse.ConstantValue);
             }
 
-         public int MyProperty(char key)
+         public int RetrieveConstant(char key)
             {
                  return 0;
-             }
+            }
       }
        
 

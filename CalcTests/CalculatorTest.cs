@@ -258,29 +258,40 @@ namespace CalcTestN
         [TestMethod]
         public void UserCanSetACostantValueViaString()
         {
+            //Arrange
             string input = "a=15";
             Parse parse = new Parse();
-            Dictionary<char, int> dict = new Dictionary<char, int>();
             var constants = new Constants();
-            char key = parse.ExtractCharacter(input);
-            // int value = parse.ExtractValue(input['1']);
+            char key = parse.ExtractConstant(input);
+            int value = parse.ExtractValue(input);
             var splitInput = input.Split('=');
-            int.Parse(splitInput[1]);
-    
-            var expected = 15.ToString();
-            Assert.AreEqual(expected, splitInput[1]);
-           
+
+            //ACT
+            constants.setConstant(key, value);
+
+            //Assert
+            Assert.IsTrue(constants.calculatorConstants.ContainsKey(key));
+            Assert.IsTrue(constants.calculatorConstants.ContainsValue(value));
+
         }
 
         [TestMethod]
-        public void UserCanSetACostantValueViaString2()
+        public void UserCanGetACostantValueViaString()
         { 
+            //Arrange
             string input = "a=15";
             Parse parse = new Parse();
-            parse.ExtractCharacter(input);
-            char actual = parse.ExtractCharacter(input);
-            char expected = 'a';
-            Assert.AreEqual(expected, actual);
+            var constants = new Constants();
+            Char key = parse.ExtractConstant(input);
+            int value = parse.ExtractConstant(input);
+            var splitInput = input.Split('=');
+            constants.setConstant(key, value);
+
+            //ACT
+            int valueExtracted = constants.getConstant(key);
+
+            //Assert
+            Assert.AreEqual(value, valueExtracted);
         }
     } 
 }

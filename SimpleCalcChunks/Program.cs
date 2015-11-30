@@ -39,7 +39,7 @@ namespace SimpleCalcChunks
                 {
                     if (input.Contains("="))
                     {
-                        parse.ExtractCharacter(input);
+                        parse.ExtractConstant(input);
                         stack.SaveConstant(parse.ConstantKey, parse.ConstantValue);
                     }
                     else
