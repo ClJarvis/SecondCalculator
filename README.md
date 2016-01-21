@@ -1,4 +1,4 @@
-# SecondCalculator
+# Second Calculator
 # Simple Interactive Calculator 
 
 ## Goal
